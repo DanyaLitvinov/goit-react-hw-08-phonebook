@@ -60,7 +60,7 @@ const Registration = () => {
       default:
         return;
     }
-    const validationForEmail = /^(([^<>()[].,;:\s@"]+(.[^<>()[].,;:\s@"]+)*)|(".+"))@(([^<>()[].,;:\s@"]+.)+[^<>()[].,;:\s@"]{2,})$/i;
+    const validationForEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
     if (!validationForEmail.test(String(e.target.value).toLowerCase())) {
       setEmailError('Not required symbols for email');
     } else {
