@@ -1,23 +1,27 @@
 import styled from 'styled-components';
 
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+`
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 300px;
-
-  input[type='text'],
-  input[type='tel'] {
-    padding: 4px;
-    margin-bottom: 8px;
-  }
-
 `;
 
 export const Label = styled.label`
   display: flex;
-  flex-direction: column; 
-  margin-bottom: 8px; 
-  font-weight: bold; 
+  flex-direction: column;
+  margin-bottom: 8px;
+  font-weight: bold;
+  position: relative;
 `;
 
 export const Button = styled.button`
@@ -33,5 +37,5 @@ export const Button = styled.button`
   &:hover {
     background-color: darkgreen;
   }
-}`
+`
 
