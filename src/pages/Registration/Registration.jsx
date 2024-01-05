@@ -30,7 +30,7 @@ const Registration = () => {
       setValid(true);
     }
 
-  }, [passwordError]);
+  }, [passwordError, emailError, nameError]);
 
   const handleChangeName = (e) => {
     const { name, value } = e.target;

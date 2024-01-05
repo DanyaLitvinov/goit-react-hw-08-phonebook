@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { authSelectors } from '../../redux/Auth';
 import { NavLink } from 'react-router-dom';
-import { HomeAuthContainer, HomeButton, HomeContainer, HomeTitle } from './Home.styled';
+import { HomeAuthContainer, HomeContainer, HomeTitle } from './Home.styled';
 
 const Home = () => {
   const userName = useSelector(authSelectors.getUsername);

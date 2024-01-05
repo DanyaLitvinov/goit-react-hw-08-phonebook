@@ -25,7 +25,7 @@ const Login = () => {
       setValid(true);
     }
 
-  }, [passwordError]);
+  }, [passwordError, emailError]);
 
   const handleChangeEmail = (e) => {
     const { name, value } = e.target;
@@ -37,7 +37,7 @@ const Login = () => {
       default:
         return;
     }
-    const validationForEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    const validationForEmail = /^(([^<>()[].,;:\s@"]+(.[^<>()[].,;:\s@"]+)*)|(".+"))@(([^<>()[].,;:\s@"]+.)+[^<>()[].,;:\s@"]{2,})$/i;
     if (!validationForEmail.test(String(e.target.value).toLowerCase())) {
       setEmailError('Not required symbols for email');
     } else {
